@@ -44,26 +44,27 @@ todaydate = datetime.today().day
 
 if month=="October" and day=="31":
     print("You were born on Halloween!")
-if month==month_name[todaymonth] and day==todaydate: #change to datetime fuction!
-    print("Happy birthday!")
 else:
-    if month in ["December", "January", "February"]:
-        season = "winter"
-    if month in ["March", "April", "May"]:
-        season = "spring"
-    if month in ["June", "July", "August"]:
-        season = "summer"
-    if month in ["September", "October", "November"]:
-        season = "fall"
+    if month==month_name[todaymonth] and day==todaydate:
+        print("Happy birthday!")
+    else:
+        if month in ["December", "January", "February"]:
+            season = "winter"
+        if month in ["March", "April", "May"]:
+            season = "spring"
+        if month in ["June", "July", "August"]:
+            season = "summer"
+        if month in ["September", "October", "November"]:
+            season = "fall"
     
-    if year < 1980:
-        age = "Stone Age"
-    if year in [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989]:
-        age = "eighties"
-    if year in [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]:
-        age = "nineties"
-    if year >= 2000:
-        age = "two thousands"
+        if int(year) < 1980:
+            age = "Stone Age"
+        if int(year) in [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989]:
+            age = "eighties"
+        if int(year) in [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]:
+            age = "nineties"
+        if int(year) >= 2000:
+            age = "two thousands"
     
-    print("{0}, you are a {1} baby of the {2}".format(name, season, age))
+        print("{0}, you are a {1} baby of the {2}.".format(name, season, age))
     
