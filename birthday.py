@@ -45,7 +45,7 @@ todaydate = datetime.today().day
 if month=="October" and day=="31":
     print("You were born on Halloween!")
 else:
-    if month==month_name[todaymonth] and day==todaydate:
+    if month==str(month_name[todaymonth]) and day==str(todaydate):
         print("Happy birthday!")
     else:
         if month in ["December", "January", "February"]:
