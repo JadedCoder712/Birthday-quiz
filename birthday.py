@@ -56,11 +56,14 @@ else:
     if month in ["September", "October", "November"]:
         season = "fall"
     
+    if year < 1980:
+        age = "Stone Age"
+    if year in [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989]:
+        age = "eighties"
+    if year in [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]:
+        age = "nineties"
+    if year >= 2000:
+        age = "two thousands"
     
+    print("{0}, you are a {1} baby of the {2}".format(name, season, age))
     
-    
-
-
-
-
-
